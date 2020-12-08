@@ -1,4 +1,5 @@
 # Bonjour
 
-##Bienvenu sur mon projet en ligne
-vous trouverez dans le dossier projet les codes HTML, JS et CSS
+##Bienvenu sur mon projet en ligne.
+
+Vous trouverez dans le dossier projet les codes HTML, JS et CSS
