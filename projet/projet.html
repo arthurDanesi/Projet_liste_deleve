@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>projet</title>
+    <script src="js/projet.js"></script>
+    <link rel="stylesheet" href="css/projet.css" type="text/css">
+</head>
+<body onload="listeEleve()">
+    <header>
+        <h1>
+            Haute Ecole de programation
+        </h1>
+        <h2>
+            Liste d'élèves
+        </h2>
+        <img src="image/copie.jpg" alt="logo de la haute école">
+    </header>
+    <main>
+      <section>
+        <form action="#" onSubmit="return ajouterEleve()">
+          <fieldset>
+            <legend><h3>Nouvel élève</h3></legend>
+            <!---nom --->
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+            <!---prénom --->
+            <label for="nom">Prénom:</label><input type="text" id="prenom" name="prenom" required><br>
+            <!---matricule--->
+            <label for="nom">Matricule</label><input type="text" id="matricule" name="matricule"  >
+            <label for="nom">exemple : HE001</label>
+            <br>
+            <!---cote anglais --->
+            <label for="nom">Cote d'anglais:</label><input type="number" id="ang" name="ang" min="0" max="20" step="0.5" required>
+            <label for="nom">/20</label>
+            <br>
+            <!---cote progra --->
+            <label for="nom">Cote de programation:</label><input type="number" id="progra" name="progra" min="0" max="20" step="0.5" required>
+            <label for="nom">/20</label>
+            <br>
+            <!---cote init PC --->
+            <label for="nom">Cote d'initiation aux ordinateur:</label><input type="number" id="initPc" name="initPc" min="0" max="20" step="0.5" required>
+            <label for="nom">/20</label>
+            <br>
+            <!---cote reseau --->
+            <label for="nom">Cote de réseau:</label><input type="number" id="reseau" name="reseau" min="0" max="20" step="0.5" required>
+            <label for="nom">/20</label>
+            <br>
+            <!---cote math --->
+            <label for="nom">Cote de mathématique:</label><input type="number" id="math" name="math" min="0" max="20" step="0.5" required>
+            <label for="nom">/20</label>
+            <br>
+            <!---cote elec --->
+            <label for="nom">Cote d'électricité:</label><input type="number" id="elec" name="elec" min="0" max="20" step="0.5"  required>
+            <label for="nom">/20</label>
+            <br>
+            <!---boutons --->
+            <input type="submit" value="Enregistrer nouvel élève">
+          </fieldset>
+        </form>
+      </section>
+      <section>
+        <div>
+          <h3>
+            Liste des élèves de la classe
+          </h3>
+          <table>
+            <thead>
+            <tr>
+              <th>Matricule</th>
+              <th>Nom</th>
+              <th>Prénom</th>
+              <th>Anglais</th>
+              <th>Programation</th>
+              <th>Initiation aux ordinateur</th>
+              <th>Réseau</th>
+              <th>Mathématique</th>
+              <th>Electricité</th>
+              <th>Moyenne</th>
+            </tr>
+            </thead>
+            <tbody id="creeTableau">
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h3>
+            Classement des élèves de la classe
+          </h3>
+          <label for="nom">Tri par</label>
+          <select name="classement" id="trie">
+            <option value="moyenne">moyenne</option>
+            <option value="anglais">cote d'anglais</option>
+            <option value="progra">cote de programation</option>
+            <option value="initPc">cote d'initiation aux ordinateur</option>
+            <option value="reseau">cote de réseau</option>
+            <option value="math">cote de mathématique</option>
+            <option value="elec">cote d'électricité </option>
+          </select>
+          <button type="button" onclick="trie();">Valider</button>
+          <ol>
+          </ol>
+        </div>
+      </section>
+    </main>
+    <footer>
+       HE303914 Arthur Danesi -- Projet -- Haut école de programation -- 2020-2021
+    </footer>
+</body>
+</html>

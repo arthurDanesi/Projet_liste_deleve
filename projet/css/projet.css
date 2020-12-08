@@ -1,0 +1,51 @@
+body{
+  font-family: "Microsoft Sans Serif", sans-serif ;
+  background-color: black;
+  color:darkgreen;
+}
+h1, h2, h3{
+  text-align: center;
+  text-decoration: underline ;
+}
+
+img{
+  position: absolute;
+  left: 550px;
+  top: 0;
+}
+section div{
+  float:left;
+  box-sizing:border-box ;
+  width: calc(50% - (2*0.5%));
+  height: 300px;
+  padding: 1%;
+  border: 1px solid white;
+  margin: 0.5%;
+  overflow: auto;
+
+}
+td{
+
+  letter-spacing: 1px;
+  text-align: center;
+
+}
+footer{
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+}
+input{
+  background-color: black;
+  color:darkgreen;
+  background-color: black
+}
+select{
+  color:darkgreen;
+  background-color: black
+}
+button{
+  background-color: black;
+  color:darkgreen;
+}
