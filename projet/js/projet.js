@@ -8,6 +8,12 @@ let eleve={
     HE006:{nom:"m", prenom:"n", ang:15.5, progra:6, initPc:12.75, reseau:15, math:5, elec:5},
 };
 
+/**
+ * Ajoute les données du formulaire dans l'objet élève avec comme cle la valeur de la variable nouv si elles sont correct
+ * Sinon renvoie d'un message d'erreur
+ *
+ * @returns {boolean} pour que les données ne partent pas vers un serveur
+ */
 function ajouterEleve () {
   let nouv = document.getElementById("matricule").value;
   if(!(nouv in eleve)){
@@ -29,6 +35,11 @@ function ajouterEleve () {
   }
 }
 
+/**
+ * creation de la moyenne de l'élève
+ * création du tableau modifier dynamiquement
+ *
+ */
 function listeEleve() {
   let cree = "";
   let moyenne;
