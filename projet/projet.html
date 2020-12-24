@@ -17,6 +17,7 @@
         <img src="image/copie.jpg" alt="logo de la haute école">
     </header>
     <main>
+      <!---formulaire--->
       <section>
         <form action="#" onSubmit="return ajouterEleve ()">
           <fieldset>
@@ -59,6 +60,7 @@
           </fieldset>
         </form>
       </section>
+      <!---liste--->
       <section>
         <div>
           <h3>
@@ -84,13 +86,14 @@
           </table>
         </div>
       </section>
+      <!---classement--->
       <section>
         <div>
           <h3>
             Classement des élèves de la classe
           </h3>
           <label for="nom">Tri par</label>
-          <select name="classement" id="trie">
+          <select name="classement" id="trie" >
             <option value="moyenne">moyenne</option>
             <option value="anglais">cote d'anglais</option>
             <option value="progra">cote de programation</option>
@@ -100,12 +103,12 @@
             <option value="elec">cote d'électricité </option>
           </select>
           <button type="button" onclick="trie();">Valider</button>
-          <ol>
-          </ol>
+          <ol id="trier"> 
+          </ol> 
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="foot">
        HE303914 Arthur Danesi -- Projet -- Haut école de programation -- 2020-2021
       <br><a href="https://github.com/arthurDanesi/Projet_liste_deleve" target="_blank">Lien vers GitHub</a>
     </footer>
